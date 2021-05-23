@@ -1,0 +1,90 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block styles %}
+{{ super() }}
+	<style>
+		body { background: #e8f1f9; }
+	</style>
+{% endblock %}
+
+
+{% block title %}
+Selected: {{ name }}
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+
+      <!-- note, the id is not used in the template -->
+
+      <h1 class="pt-5 pb-2">{{ name }}</h1>
+
+      <p><a href="{{ url_for('index') }}">Return to main page</a></p>
+
+	  <!--
+	      notice how the URL in the link above is rendered for
+	      Flask - it needs to name the FUNCTION, not the route
+      -->
+
+	  <p>QR codes are generated using <a href="https://pypi.org/project/qrcode/">qrcode</a></p>
+
+	  <p>Use this page to check in components or inventory, the QR code will deep-link directly to this page. </p>
+
+     
+     <form action="/" method="POST">
+
+        <div class="form-group">
+          <label>Quantity</label>
+          <input type="number" class="form-control" id="Quantity" name="Quantity" placeholder="Select Quantity to check-in" required>
+        </div>
+
+        <div class="form-group">
+          <label>+/- Quantity</label>
+          <select class="form-control" id="direction" name="direction" placeholder="Select direction for Quantity" required>
+          <option>-</option>
+          <option>+</option>
+          </select>
+        </div>
+
+         <div class="form-group">
+          <label>Build or Send</label>
+          <select class="form-control" id="Build_Send" name="Build_Send" placeholder="Select Build or Send" required>
+          <option>Build</option>
+          <option>Send</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Warranty</label>
+          <input type="text" class="form-control" id="Warranty ID" name="Warranty ID" placeholder="Enter the Warranty ID" required>
+        </div>
+
+        <br>
+              
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+        <input type="hidden" class="form-control" id="Item_name" name="Item_name", value="{{ name }}">
+        
+        <input type="hidden" id="type" name="type", value="Inventory">
+
+      </form>
+      
+        
+    </div>
+    <div class="col-sm-6">
+
+      <img src="{{ qr }}" alt="Photo: {{ name }}" class="img-fluid pt-5">
+
+      <p><em>Above: {{ qr }}</em></p>
+      
+      
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

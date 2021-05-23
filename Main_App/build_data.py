@@ -1,0 +1,1 @@
+DB = [{"Inventory ID": 1, "Name": "Build EQUINOX", "BOM ID": 1}, {"Inventory ID": 2, "Name": "Build Custom", "BOM ID": 2}, {"Inventory ID": 3, "Name": "Build EQUINOX 2.0", "BOM ID": 3}]
