@@ -8,9 +8,15 @@ QR ERP is a product demo for a cloud based QR scanning system. Small manufacturi
 Figure 1: End to End Inventory flow
 <img width="863" alt="QR ERP BG" src="https://user-images.githubusercontent.com/16582383/118562065-df697900-b720-11eb-9fa6-c8a76dfc289c.PNG">
 
-To run the flask app, clone the repo and run app.py inside the main App folder. A cloud database setup comes with a bit more work. To begin you need an azure account. Contact cloud@optimchain.org to see how we can help you setup your backend! (Figure 2)
+These QR Codes can then be pasted within the workshop floor as seen in Figure 2 and allow ease of access to different manufacturing options
 
-Figure 2: Front end app interface
+Figure 2: QR Codes at Factory Floor Level
+![QR_Workshop](https://user-images.githubusercontent.com/84352976/120263986-af0df880-c251-11eb-8fd4-f86784022cde.jpg)
+
+
+To run the flask app, clone the repo and run app.py inside the main App folder. A cloud database setup comes with a bit more work. To begin you need an azure account. Contact cloud@optimchain.org to see how we can help you setup your backend! (Figure 3)
+
+Figure 3: Front end app interface
 
 ![image](https://user-images.githubusercontent.com/16582383/118562976-974b5600-b722-11eb-85da-b22b557fa781.png)
 
