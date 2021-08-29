@@ -29,7 +29,7 @@ Repo: <https://github.com/IamJasonBian/QR_ERP>
 
 ### Running the azure hosted Demo App
 
-Demo Site (Please wait 60 seconds for it to load as we are using a small VM): <https://qr-app-test.azurewebsites.net>
+Demo Site (Please wait 60 seconds for it to load as we are using a small VM to host demo labs): <https://qr-app-test.azurewebsites.net>
 
 Demo Slide: <https://github.com/IamJasonBian/QR_ERP/blob/master/QR-ERP-Manufacturing%20Implementation.pptx>
 
